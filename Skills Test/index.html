@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Campus Fandom Clubs</title>
+</head>
+
+<body>
+    <h1 class="title">Campus Fandom Clubs</h1>
+
+    <div class="box">
+        <label class="label">Choose a Club:</label>
+
+        <select id="clubSelect" class="dropdown">
+            <option value="Anime Appreciation Society">Anime Appreciation Society</option>
+            <option value="Retro Gaming League">Retro Gaming League</option>
+            <option value="Comic & Manga Circle">Comic & Manga Circle</option>
+            <option value="Animation & Storyboard Workshop">Animation & Storyboard Workshop</option>
+        </select>
+
+        <button py-click="show_info" class="btn">View Details</button>
+
+        <div id="output" class="output"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
